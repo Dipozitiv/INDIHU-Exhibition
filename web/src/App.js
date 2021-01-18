@@ -34,7 +34,7 @@ const App = ({ warning, closeWarning, ...props }) => (
       <Router>
         <AuthController>
           <Helmet>
-            <title>INDIHU Exhibition</title>
+            <title>Exhibition Standard™</title>
             <meta
               name="description"
               content="Vývoj nástrojů a infrastruktury pro digital humanities"

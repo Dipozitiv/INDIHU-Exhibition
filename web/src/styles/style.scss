@@ -50,6 +50,10 @@ $breakpoint-200: 200px;
 $md-primary-color: $c-blue-dark;
 $md-secondary-color: $c-blue-primary;
 $md-colors-warn-md: false;
+:root {
+  --primary-color: $md-primary-color;
+  --secondary-color: $md-secondary-color;
+}
 @include react-md-everything;
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";

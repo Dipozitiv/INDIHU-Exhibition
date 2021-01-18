@@ -22,7 +22,7 @@ const Expo = props => {
   return (
     <div>
       <Helmet>
-        <title>{`INDIHU Exhibition${
+        <title>{`Exhibition Standard™${
           get(activeExpo, "title") ? ` - ${get(activeExpo, "title")}` : ""
         }`}</title>
         <meta name="description" content="Editace výstavy" />

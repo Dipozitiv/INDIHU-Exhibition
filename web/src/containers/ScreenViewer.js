@@ -348,7 +348,7 @@ export default compose(
         progressEnabled={viewExpo && started}
       >
         <Helmet>
-          <title>{`INDIHU Exhibition${
+          <title>{`Exhibition Standard™${
             get(activeExpo, "title") ? ` - ${get(activeExpo, "title")}` : ""
           }`}</title>
           <meta name="description" content="Náhled obrazovky" />

@@ -15,7 +15,7 @@ import { screenTypeText } from "../enums/screenType";
 import { isAdmin, openInNewTab } from "../utils";
 
 const mdStyles =
-  "md-paper md-paper--2 md-background--primary md-toolbar--text-white md-toolbar--discrete md-toolbar--fixed";
+  "md-toolbar--discrete md-toolbar--fixed";
 
 const AppHeader = ({
   history,
@@ -56,22 +56,23 @@ const AppHeader = ({
         </FontIcon>
       )}
       <h2
-        className={classNames("md-title md-title--toolbar toolbar-title", {
+        className={classNames("md-title md-title--toolbar toolbar-title ", {
           "with-link":
             adminStyle || authStyle || profileStyle || expositionsStyle
         })}
+        style={{ fontSize: '1em' }}
         onClick={() =>
           (adminStyle || authStyle || profileStyle || expositionsStyle) &&
           history.push(authStyle ? "/" : "/exhibitions")
         }
       >
         {adminStyle || authStyle || profileStyle || expositionsStyle
-          ? "INDIHU Exhibition"
+          ? "Exhibition Standard™"
           : screenStyle && activeScreen
           ? activeScreen.type
             ? screenTypeText[activeScreen.type]
-            : get(activeExpo, "title", "INDIHU Exhibition")
-          : get(activeExpo, "title", "INDIHU Exhibition")}
+            : get(activeExpo, "title", "Exhibition Standard™")
+          : get(activeExpo, "title", "Exhibition Standard™")}
       </h2>
       {authStyle && (
         <a
@@ -196,7 +197,7 @@ const AppHeader = ({
             })}
             onClick={() => history.push("/exhibitions")}
           >
-            Výstavy
+            Přehled výstav
           </p>
         )}
         {

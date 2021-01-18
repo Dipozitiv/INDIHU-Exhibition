@@ -47,7 +47,7 @@
   },
   "proxy": {
     "/api": {
-      "target": "https://exhibition-test.indihu.cz/",
+      "target": "http://167.71.53.104:8080",
       "secure": false,
       "changeOrigin": true
     }

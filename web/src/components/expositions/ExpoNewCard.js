@@ -7,12 +7,19 @@ import { setDialog } from "../../actions/dialogActions";
 
 const ExpoNewCard = ({ setDialog }) => (
   <div className="expo-card">
-    <Card raise onClick={() => setDialog("ExpoNew")}>
+    <Card
+      onClick={() => setDialog("ExpoNew")}
+      style={{
+        boxShadow: "none",
+        border: "1px solid #000",
+        backgroundColor: "transparent",
+      }}
+    >
       <CardText className="expo-new">
         <i className="material-icons">add</i>
-        <p> Vytvořit novou výstavu </p>
       </CardText>
     </Card>
+    <p> Vytvořit novou výstavu </p>
   </div>
 );
 
