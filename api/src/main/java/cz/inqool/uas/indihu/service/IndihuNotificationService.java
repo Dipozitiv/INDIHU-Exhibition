@@ -123,7 +123,7 @@ public class IndihuNotificationService {
      */
     private void sendMessage(String text, String subject, String email) {
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("info@indihu.cz");
+        message.setFrom("no-reply@graphicstandard.eu");
         message.setTo(email);
         message.setSubject(subject);
         message.setText(text);
@@ -139,7 +139,7 @@ public class IndihuNotificationService {
     private void notifyAdmins(String text, String subject) {
         List<String> adminMails = userRepository.getAdminMails();
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("info@indihu.cz");
+        message.setFrom("no-reply@graphicstandard.eu");
         message.setTo(adminMails.toArray(new String[adminMails.size()]));
         message.setSubject(subject);
         message.setText(text);
