@@ -18,10 +18,17 @@
 
     <repositories>
         <repository>
+            <id>local-repo</id>
+            <name>inqool-core</name>
+            <url>file://local-mvn-repo</url>
+        </repository>
+
+        <repository>
             <id>central</id>
             <name>central</name>
             <url>https://repo.maven.apache.org/maven2/</url>
         </repository>
+
         <repository>
             <id>cefdigital</id>
             <name>cefdigital</name>

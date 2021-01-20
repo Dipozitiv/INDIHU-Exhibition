@@ -34,7 +34,10 @@
         <j2html.version>1.2.0</j2html.version>
         <draft4j.version>0.0.1</draft4j.version>
         <pdfbox.version>2.0.5-inqool</pdfbox.version>
-        <dss.version>4.7.RC2-inqool</dss.version>
+
+<!--        UNUSED ... unavailable -->
+<!--        <dss.version>4.7.RC2-inqool</dss.version>-->
+        
         <poi.version>3.15</poi.version>
         <jxls.version>2.4.2</jxls.version>
         <jxls.poi.version>1.0.13</jxls.poi.version>
@@ -69,7 +72,7 @@
 
         <commons-csv.version>1.6</commons-csv.version>
     </properties>
-
+    <!--
     <repositories>
         <repository>
             <id>nexus.inqool.cz</id>
@@ -85,7 +88,7 @@
             <url>http://nexus.inqool.cz/repository/maven-releases/</url>
         </repository>
     </distributionManagement>
-
+    -->
     <dependencyManagement>
         <dependencies>
             <dependency>
