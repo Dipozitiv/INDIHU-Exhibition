@@ -29,6 +29,10 @@ body {
   src: local("Roboto"), local("Roboto-Regular"), url("../assets/fonts/Roboto.woff") format("woff"); }
 
 /* COLORS */
+:root {
+  --primary-color: #083d77;
+  --secondary-color: #3366cc; }
+
 /* BREAKPOINTS */
 /* MD */
 .md-display-4 {
@@ -4613,17 +4617,18 @@ tbody .md-table-row {
     display: block;
     font-size: 1em;
     text-align: center;
+    color: #111;
     margin: 0.7em 1em 0.4em;
     border-bottom: 1px solid transparent;
     white-space: nowrap;
     cursor: pointer; }
     .toolbar-button.active {
-      border-bottom: 1px solid black;
+      border-bottom: 1px solid #111;
       cursor: auto; }
       .toolbar-button.active:hover {
-        color: var(--primary-color) }
+        color: #3366cc; }
     .toolbar-button:hover {
-      color: var(--primary-color) }
+      color: #3366cc; }
     .toolbar-button.nonclickable {
       cursor: auto; }
       .toolbar-button.nonclickable:hover {

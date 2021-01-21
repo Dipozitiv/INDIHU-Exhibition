@@ -33,6 +33,11 @@ $c-positive: #e4f1e4;
 $c-maroon: #85144b;
 $c-red: #ff4136;
 
+:root {
+  --primary-color: #083d77;
+  --secondary-color: #3366cc;
+}
+
 /* BREAKPOINTS */
 
 $breakpoint-desktop-big: 1560px;
@@ -50,10 +55,9 @@ $breakpoint-200: 200px;
 $md-primary-color: $c-blue-dark;
 $md-secondary-color: $c-blue-primary;
 $md-colors-warn-md: false;
-:root {
-  --primary-color: $md-primary-color;
-  --secondary-color: $md-secondary-color;
-}
+
+
+
 @include react-md-everything;
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";

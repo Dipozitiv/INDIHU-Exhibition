@@ -51,20 +51,20 @@
     display: block;
     font-size: 1em;
     text-align: center;
-    color: $c-white;
+    color: $c-black;
     margin: 0.7em 1em 0.4em;
     border-bottom: 1px solid transparent;
     white-space: nowrap;
     cursor: pointer;
     &.active {
-      border-bottom: 1px solid $c-white;
+      border-bottom: 1px solid $c-black;
       cursor: auto;
       &:hover {
-        color: $c-white;
+        color: $c-blue-primary;
       }
     }
     &:hover {
-      color: $c-blue-light;
+      color: $c-blue-primary;
     }
     &.nonclickable {
       cursor: auto;
