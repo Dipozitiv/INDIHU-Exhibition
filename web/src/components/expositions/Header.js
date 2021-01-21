@@ -35,7 +35,7 @@ const Header = ({
       ) : (
         <div />
       )}
-      <Button
+      {/* <Button
         icon
         onClick={async () => {
           ReactTooltip.hide();
@@ -55,7 +55,7 @@ const Header = ({
         type="dark"
         effect="solid"
         place="bottom"
-      />
+      /> */}
     </div>
   </div>
 );

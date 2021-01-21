@@ -19,7 +19,7 @@ const ExpoNewCard = ({ setDialog }) => (
         <i className="material-icons">add</i>
       </CardText>
     </Card>
-    <p> Vytvořit novou výstavu </p>
+    <h3> Vytvořit novou výstavu </h3>
   </div>
 );
 

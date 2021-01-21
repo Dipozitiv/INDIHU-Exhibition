@@ -36,7 +36,7 @@ const Filter = ({
   getExpositions
 }) => (
   <div className="flex-header-actions">
-    <div className="flex-header-row">
+    {/* <div className="flex-header-row">
       <p className="flex-header-text"> Filtr projektů: </p>
       <SelectField
         id="expositions-selectfield-filter"
@@ -53,7 +53,7 @@ const Filter = ({
           getExpositions(get(expositions, "count"));
         }}
       />
-    </div>
+    </div> */}
     <div className="flex-header-row">
       <SelectField
         id="expositions-selectfield-filter2"
@@ -96,7 +96,7 @@ const Filter = ({
           place="bottom"
         />
       </div>
-      <div className="search">
+      {/* <div className="search">
         <TextField
           id="expositions-filter-textfield-search"
           placeholder="Hledat"
@@ -110,7 +110,7 @@ const Filter = ({
           defaultValue={filter.search}
         />
         <FontIcon className="search-icon">search</FontIcon>
-      </div>
+      </div> */}
     </div>
   </div>
 );

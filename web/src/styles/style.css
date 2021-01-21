@@ -3714,6 +3714,7 @@ tbody .md-table-row {
 
 /* CONTAINERS */
 .container {
+  max-width: 1340px;
   margin: 0 auto;
   padding-top: 5em;
   padding-left: 0.5em;
@@ -4381,7 +4382,7 @@ tbody .md-table-row {
   overflow: hidden; }
 
 .md-text-field {
-  font-size: 16px; }
+  font-size: 14px; }
 
 .md-text--disabled {
   color: rgba(0, 0, 0, 0.75); }
@@ -4728,7 +4729,7 @@ tbody .md-table-row {
   flex-wrap: wrap; }
   .expo-card {
     min-width: 310px;
-    width: 33%;
+    width: calc(33.333% - 20px);
     margin: 10px; }
   .expo-new {
     height: 23.8em;
@@ -4768,6 +4769,9 @@ tbody .md-table-row {
   width: 100%;
   height: 1px;
   background-color: #d3d3d3; }
+
+.expo-card h3 {
+  margin-top: 0.5rem; }
 
 @media (max-width: 655px) {
   .expo-card {
@@ -5881,8 +5885,6 @@ tbody .md-table-row {
           min-height: 4.5em;
           max-height: 4.5em;
           padding: 0 1em; } }
-      .viewer-start-menu .menu-tab h2 {
-        font-weight: bold; }
       .viewer-start-menu .menu-tab.collapsed {
         height: 80vh; }
       .viewer-start-menu .menu-tab.left {
@@ -7276,6 +7278,9 @@ tbody .md-table-row {
 @media (max-width: 350px) {
   .image-editor-title, .image-editor-loading-title {
     font-size: 1em; } }
+
+* {
+  font-family: "GT America"; }
 
 .__react_component_tooltip {
   z-index: 100000 !important;

@@ -37,9 +37,6 @@ const ExpoCard = ({
       }
     >
       <CardText className="expo-card-text">
-        <div className="md-grid">
-          <p>{title}</p>
-        </div>
         <Divider />
         <div className="md-grid">
           <div className="md-cell--left">
@@ -80,6 +77,7 @@ const ExpoCard = ({
         <ExpoCardActions {...{ id, title, canEdit, canDelete, url, state }} />
       </CardActions>
     </Card>
+    <h3>{title}</h3>
   </div>
 );
 

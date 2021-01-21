@@ -75,6 +75,10 @@ $md-colors-warn-md: false;
 @import "components/viewer.scss";
 @import "components/image-editor.scss";
 
+* {
+  font-family: "GT America";
+}
+
 .__react_component_tooltip {
   z-index: 100000 !important;
   max-width: 60vw;
