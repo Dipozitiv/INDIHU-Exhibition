@@ -24,6 +24,11 @@ const ExpoCard = ({
   <div className="expo-card">
     <Card
       raise
+      style={{
+        boxShadow: "none",
+        border: "1px solid white",
+        backgroundColor: "white",
+      }}
       onClick={() =>
         canEdit &&
         state !== "ENDED" &&

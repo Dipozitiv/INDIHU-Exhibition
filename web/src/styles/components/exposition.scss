@@ -1,13 +1,14 @@
 $height-actions: 3.8em;
-$height-card-text: 15em;
+$height-card-text: 20em;
 $height-card-new: $height-actions + $height-card-text;
 .expo {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   &-card {
-    width: 310px;
+    min-width: 310px;
+    width: 33%;
     margin: 10px;
   }
   &-new {
@@ -94,7 +95,7 @@ $height-card-new: $height-actions + $height-card-text;
   }
 
   &-inner {
-    max-width: 1340px;
+    // max-width: 1340px;
     margin: 0 auto;
     padding-left: 0.5em;
     padding-right: 0.5em;

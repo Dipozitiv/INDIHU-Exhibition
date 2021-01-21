@@ -4,29 +4,23 @@
 html {
   min-height: 10vh;
   height: 100vh;
-  max-height: 100vh; }
+  max-height: 100vh;
+  background-color: #EAEAEA !important; }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Raleway";
+  font-family: "GT America";
   -webkit-font-smoothing: antialiased;
   min-height: 10vh;
   height: 100vh;
   max-height: 100vh; }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'GT America';
   font-style: normal;
   font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../assets/fonts/Roboto.woff2") format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Roboto"), local("Roboto-Regular"), url("../assets/fonts/Roboto.woff") format("woff"); }
+  src: url("../assets/fonts/GT-America-Regular.woff2") format("woff2"); }
 
 /* COLORS */
 :root {
@@ -3720,7 +3714,6 @@ tbody .md-table-row {
 
 /* CONTAINERS */
 .container {
-  max-width: 1340px;
   margin: 0 auto;
   padding-top: 5em;
   padding-left: 0.5em;
@@ -4552,7 +4545,6 @@ tbody .md-table-row {
     background-color: #fff; }
   .dialog.large {
     width: 99vw;
-    max-width: 1340px;
     max-height: 99vh; }
   .dialog.warning {
     z-index: 1000001; }
@@ -4732,13 +4724,14 @@ tbody .md-table-row {
 .expo {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap; }
   .expo-card {
-    width: 310px;
+    min-width: 310px;
+    width: 33%;
     margin: 10px; }
   .expo-new {
-    height: 18.8em;
+    height: 23.8em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -4749,7 +4742,7 @@ tbody .md-table-row {
     .expo-new p {
       font-weight: bold; }
   .expo-card-text {
-    height: 15em;
+    height: 20em;
     overflow-y: auto; }
   .expo-actions {
     position: relative;
@@ -4799,7 +4792,6 @@ tbody .md-table-row {
     margin-top: -5em;
     padding-top: 5em; }
   .expositions-container-inner {
-    max-width: 1340px;
     margin: 0 auto;
     padding-left: 0.5em;
     padding-right: 0.5em; }
@@ -5448,7 +5440,6 @@ tbody .md-table-row {
   background: #083d77;
   height: 3.8em; }
   .fixed-bottom-footer .inner {
-    max-width: 1340px;
     margin: 0 auto;
     height: 3.8em;
     display: flex;
@@ -7285,9 +7276,6 @@ tbody .md-table-row {
 @media (max-width: 350px) {
   .image-editor-title, .image-editor-loading-title {
     font-size: 1em; } }
-
-*:not(i) {
-  font-family: "Raleway"; }
 
 .__react_component_tooltip {
   z-index: 100000 !important;
