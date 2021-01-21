@@ -2,12 +2,13 @@ html {
   min-height: 10vh;
   height: 100vh;
   max-height: 100vh;
+  background-color: #EAEAEA !important;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Raleway";
+  font-family: "GT America";
   -webkit-font-smoothing: antialiased;
   min-height: 10vh;
   height: 100vh;
@@ -73,10 +74,6 @@ $md-colors-warn-md: false;
 @import "components/scrollbar.scss";
 @import "components/viewer.scss";
 @import "components/image-editor.scss";
-
-*:not(i) {
-  font-family: "Raleway";
-}
 
 .__react_component_tooltip {
   z-index: 100000 !important;
